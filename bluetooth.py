@@ -1,10 +1,5 @@
 import serial
-
-ser = serial.Serial('COM6')  # open serial port
-print(ser.name)         # check which port was really used
-ser.write(b'hello')     # write a string
-
-
+import tkinter as tk
 import folium as fl
 import numpy as np
 import io
@@ -12,6 +7,10 @@ import selenium
 from PIL import Image
 import cv2
 from folium.plugins import MousePosition
+
+ser = serial.Serial('COM6')  # open serial port
+print(ser.name)         # check which port was really used
+ser.write(b'hello')     # write a string
 
 targetLoc=(38.803490,-76.871508)
 view=2
